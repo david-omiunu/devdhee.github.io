@@ -16,7 +16,7 @@ nav {
 nav img {
     width: 100px;
     height: 80px;
-    margin-left: 30px;
+    transform: translateX(30px);
 }
 
 nav svg {
@@ -251,6 +251,13 @@ nav ul button a {
 }
 
 @media only screen and (max-width: 700px) {
+    * {
+        outline: 1px red solid !important;
+        visibility: visible !important;
+    }
+    nav {
+        display: block;
+    }
     nav svg {
         display: block;
         margin-left: auto;
@@ -261,11 +268,15 @@ nav ul button a {
         top: 75px;
         right: 0;
         z-index: 2;
+        display: block;
     }
-    nav ul li a {
+    nav ul li {
         display: block;
         margin: 10px 0px 10px 0px;
         background-color: #000;
+        width: 100%;
+        margin: 0px;
+        padding: 0;
     }
     .main h1 {
         transform: translate(-150px, 0px);
@@ -322,6 +333,6 @@ nav ul button a {
     }
     .footer img {
         margin-top: 0px;
-        transform: translate(150px, -70px);
+        transform: translate(50px, -20px);
     }
 }
