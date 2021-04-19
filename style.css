@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+nav {
+    display: flex;
+    background-color: #000000;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+
+nav img {
+    width: 100px;
+    height: 80px;
+    margin-left: 30px;
+}
+
+nav ul {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 10px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 15px;
+}
+
+nav ul li a:hover {
+    color: #7c7c7c;
+}
+
+nav ul button {
+    margin: 10px 30px 10px 20px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e7e7e7;
+}
+
+nav ul button :hover {
+    color: #fff;
+    background-color: #7c7c7c;
+    border-radius: 5px;
+}
+
+nav ul button a {
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    height: 40px;
+    padding: 10px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    background-color: #000;
+    position: absolute;
+    top: 74px;
+    left: 0px;
+}
+
+.main h1 {
+    margin: 100px 0px 0px 220px;
+    font-size: 40px;
+    line-height: 50px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.main h1::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 250px;
+    border-radius: 10px;
+    transform: translateX(-15px);
+    background-color: #fff;
+}
+
+.main h3 {
+    margin: 10px 0px 0px 220px;
+    line-height: 30px;
+    letter-spacing: 4px;
+    font-size: 19px;
+    color: white;
+}
+
+.main button {
+    width: 130px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    margin: 15px 0px 0px 220px;
+}
+
+.main button a {
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+}
+
+.services {
+    position: absolute;
+    top: 574px;
+    height: 750px;
+    width: 100%;
+    background-color: cornflowerblue;
+    /* background-image: linear-gradient(180deg, black 20%, white 70%); */
+}
+
+.services h2 {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.services h2::before {
+    position: absolute;
+    content: "";
+    width: 500px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    transform: translate(-550px, 15px);
+}
+
+.services h2::after {
+    position: absolute;
+    content: "";
+    width: 500px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    transform: translate(50px, 15px);
+}
+
+.services .services-body {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    height: 650px;
+    background-color: #000000;
+    border-radius: 25px;
+    box-shadow: 2px 2px 8px #2e2c2c;
+}
+
+.services .services-body .one {
+    flex: 1;
+    background-color: #e7e7e7;
+    height: 650px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.services .services-body .two {
+    flex: 1;
+    background-color: #e7e7e7;
+    height: 650px;
+    margin: 0px 1px 0px 1px;
+}
+
+.services .services-body .three {
+    flex: 1;
+    background-color: #e7e7e7;
+    height: 650px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.portfolio {
+    position: absolute;
+    top: 1324px;
+    width: 100%;
+    height: 850px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.portfolio h2 {
+    text-align: center;
+}
+
+.portfolio p {
+    text-align: center;
+}
+
+.portfolio .project {
+    background-color: #e7e7e7;
+    height: 30%;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.footer {
+    display: flex;
+    position: absolute;
+    top: 2174px;
+    width: 100%;
+    height: 500px;
+    background-color: cyan;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.footer img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.footer .about {
+    width: 50%;
+    margin-left: 20px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+}
