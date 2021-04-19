@@ -19,6 +19,12 @@ nav img {
     margin-left: 30px;
 }
 
+nav svg {
+    width: 50px;
+    color: white;
+    display: none;
+}
+
 nav ul {
     display: flex;
     margin-left: auto;
@@ -242,4 +248,80 @@ nav ul button a {
     margin-left: 20px;
     line-height: 30px;
     letter-spacing: 0.5px;
+}
+
+@media only screen and (max-width: 700px) {
+    nav svg {
+        display: block;
+        margin-left: auto;
+    }
+    nav ul {
+        width: 100%;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li a {
+        display: block;
+        margin: 10px 0px 10px 0px;
+        background-color: #000;
+    }
+    .main h1 {
+        transform: translate(-150px, 0px);
+    }
+    .main h3 {
+        transform: translate(-150px, 0px);
+    }
+    .main button {
+        transform: translate(-150px, 0px);
+    }
+    .services {
+        height: 2050px;
+    }
+    .services .services-body {
+        flex-direction: column;
+        width: 100%;
+        height: 2000px;
+        margin-left: 0;
+        background-color: #fff;
+        box-shadow: none;
+        border-radius: 0px;
+    }
+    .services .services-body .three {
+        border-radius: 10px;
+        margin-top: 10px;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .services .services-body .two {
+        border-radius: 10px;
+        margin-top: 10px;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .services .services-body .one {
+        border-radius: 10px;
+        margin-left: 10%;
+        width: 80%;
+    }
+    .portfolio {
+        top: 2650px;
+        height: 850px;
+    }
+    .footer {
+        top: 3530px;
+        flex-direction: column-reverse;
+        height: 1000px;
+    }
+    .footer .about {
+        margin-top: 0px;
+        width: 80%;
+        margin-left: 10%;
+        text-align: center;
+    }
+    .footer img {
+        margin-top: 0px;
+        transform: translate(150px, -70px);
+    }
 }
